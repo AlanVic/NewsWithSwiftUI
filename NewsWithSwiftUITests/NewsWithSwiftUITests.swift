@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NewsWithSwiftUI
+
 
 class NewsWithSwiftUITests: XCTestCase {
 

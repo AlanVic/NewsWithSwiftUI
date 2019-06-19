@@ -13,7 +13,7 @@ import SwiftUI
 struct Article: Codable, Identifiable {
     
     let id: Int
-    let source: Source
+    let source: Source?
     let author: String?
     let title, articleDescription: String
     let url: String
