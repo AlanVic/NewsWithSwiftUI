@@ -10,8 +10,7 @@ import Foundation
 import SwiftUI
 
 // MARK: - News
-struct News: Codable, Identifiable {
-    let id: Int
+struct News: Codable{
     let status: String
     let totalResults: Int
     let articles: [Article]

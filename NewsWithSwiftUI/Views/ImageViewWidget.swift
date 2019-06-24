@@ -18,7 +18,7 @@ struct ImageViewWidget : View {
     var body: some View {
         Image(uiImage: (imageLoader.data.count == 0) ? UIImage(named: "imageDefault")! :  UIImage(data: imageLoader.data)!)
             .resizable()
-            .frame(width: 400, height: 400)
+//            .frame(width: 400, height: 250)
             .shadow(radius: 5)
             .aspectRatio(contentMode: .fit)
             .cornerRadius(8)

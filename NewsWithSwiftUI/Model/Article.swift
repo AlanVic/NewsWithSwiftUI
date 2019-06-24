@@ -10,19 +10,17 @@ import Foundation
 import SwiftUI
 
 // MARK: - Article
-struct Article: Codable, Identifiable {
-    
-    let id: Int
+struct Article: Codable{
     let source: Source?
     let author: String?
     let title, articleDescription: String
     let url: String
     let urlToImage: String
-    let publishedAt: Date
+    let publishedAt: String
     let content: String?
     
     enum CodingKeys: String, CodingKey {
-        case id, source, author, title
+        case source, author, title
         case articleDescription = "description"
         case url, urlToImage, publishedAt, content
     }
